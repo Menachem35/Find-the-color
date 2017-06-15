@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+p {
+    font-family: "MS Sans-serif", sans-serif; margin-bottom: 0 !important;
+}
+
+.AvatarDate {font-size: calc(6px + 0.8vw);}
+
+.btn {margin-bottom: 20px; width: 100%;}
+.ButtonContainer {padding-right: 0 !important; padding-left: 0 !important;}
+.SecretRow {border: solid 1px #f0f0f0; margin-top: 15px; padding-top:10px; padding-bottom: 10px;}
+
+.DudeRow {background: #d3d3d3; border-bottom: dashed red 3px;}
+.DudeContainer {
+	 display: flex;
+	 display: -webkit-box;
+	 display: -moz-box;
+	 display: -ms-flexbox;
+	 display: -webkit-flex;
+	 
+	 flex-direction: row;
+	 -webkit-flex-flow: row wrap;
+     flex-flow: row nowrap;
+}
+	.DudeItem {margin: 5px;}
+
+.PatrickRow {border-bottom: none;}
+.Avatar-img {width: 80px; height: 80px;}
+.DudeName {font-size: calc(14px + 1.1vw);}
+
+ 
+
+/* --- Extra small devices portrait phones, less than 544px --- */
+@media (max-width: 543px) {
+    .DudeContainer {
+		flex-direction: column;
+	}
+	.text-avatar, .AvatarDate {text-align: center;}
+	  
+	.DudeItem {margin: 0 auto;}
+	.Avatar-img {width: 120px; height: 120px; margin-top: 5px;}
+}
+
+/* --- Small devices (landscape phones, 544px and up) --- */
+@media (min-width: 544px) and (max-width: 767px) {
+	.DudeContainer {
+		flex-direction: column;
+	}
+	.text-avatar, .AvatarDate {text-align: center;}
+	.DudeItem {margin: 0 auto;}
+	.Avatar-img {width: 120px; height: 120px; margin-top: 5px;}
+}
+
+/* --- Medium devices (tablets, 768px and up) --- */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* --- Large devices (desktops, 992px and up) --- */
+@media (min-width: 992px) and (max-width: 1199px) { 
+	
+	
+ }
+
